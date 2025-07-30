@@ -92,7 +92,7 @@ header {
 }
 
 #Profile{
-    border-radius: 10px ;
+    border-radius: 10px 10px 0  0;
     background: var(--profile-bg) ;
      padding: clamp(5px, 2vw, 10px) clamp(10px, 2vw,20px);
 }
@@ -268,7 +268,7 @@ button{
     }
 
     .logo img {
-        width: 100px;
+        width: 140px;
     }
 
     .nav-links {
@@ -292,7 +292,7 @@ button{
     }
 
     .logo img {
-        width: 80px;
+        width: 120px;
     }
 
     .nav-links {
@@ -337,7 +337,7 @@ button{
     }
 
     .logo img {
-        width: 60px;
+        width: 100px;
     }
 
    
