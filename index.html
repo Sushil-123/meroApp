@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyPact</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="image/Logo.png" alt="Company Logo">
+            </a>
+        </div>
+
+        <button class="toggle-btn" id="toggleBtn" aria-label="Toggle navigation">☰</button>
+
+        <nav class="nav-links" id="navLinks">
+
+            <button id="theme-toggle" aria-label="Toggle Theme">
+                <!-- Moon (for dark mode icon when in light mode) -->
+                <svg id="moon-icon" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                    <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" stroke="#66BB6A" stroke-width="2" />
+                </svg>
+
+                <!-- Sun (for light mode icon when in dark mode) -->
+                <svg id="sun-icon" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                    <path
+                        d="M12 4V2M12 22v-2M4.22 4.22l-1.42-1.42M19.78 19.78l-1.42-1.42M2 12H4m16 0h2M4.22 19.78l1.42-1.42M19.78 4.22l-1.42 1.42M12 6a6 6 0 100 12 6 6 0 000-12z"
+                        stroke="#FDB813" stroke-width="2" />
+                </svg>
+            </button>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#" id="Profile"><i class="fa-solid fa-user"></i>Profile</a>
+
+        </nav>
+    </header>
+
+    <section class="topSection">
+        <div class="textBox">
+            <div class="titleText">
+                <div class="h2">
+                    <h2>Study Together,</h2>
+                </div>
+                <div class="h2">
+                    <h2>Grow Together</h2>
+                </div>
+            </div>
+            <p>Find and share notes from students across the world</p>
+
+            <button>Start Sharing</button>
+        </div>
+        <div class="textBox"></div>
+    </section>
+
+    <section class="main">
+        <section class="Uploadfile">
+
+            <div class="drop-zone" id="drop-zone">
+                <p> <svg class="cloud-upload-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                        <!-- Cloud Shape -->
+                        <path d="M48 36a10 10 0 0 0-3.3-19.5A14 14 0 0 0 21 21a10 10 0 0 0-2 19.8H48z" />
+                        <!-- Upward Arrow -->
+                        <polyline points="32 44 32 28" />
+                        <polyline points="24 36 32 28 40 36" />
+                    </svg>
+
+                    <br>Drag and drop your files here<br> or click to upload
+                </p>
+                <input type="file" id="fileInput" hidden multiple />
+            </div>
+
+            <ul id="file-list"></ul>
+
+        </section>
+
+    </section>
+
+
+
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/upload.js"></script>
+</body>
+
+</html>
